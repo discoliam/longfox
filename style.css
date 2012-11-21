@@ -1,0 +1,97 @@
+/* ------------- =LONF FOX  --------------- */
+
+/* ------------- =HEADER  --------------- */
+header, footer{
+  padding: 0 20px;
+}
+
+.site-title {
+  width: 150px;
+  height: 150px;
+  background:url(logo.gif) 0 0 no-repeat;
+  float: left;
+}
+
+nav {
+  background:url(menu-bg.png) 0 0 no-repeat;
+  height: 37px;
+  display: block;
+  float: left;
+  margin: 75px 0 0 20px;
+}
+
+nav ul{margin:0;padding:0;}
+
+nav ul li{
+  float:left;
+  margin:0;
+  padding:0;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+nav ul li a {height: 37px;background:url(menu.png) 0 0 no-repeat;}
+
+nav ul li.shop a {
+  width: 110px;
+  background-position: 0 0;
+  margin: 0 22px 0 0;
+}
+
+nav ul li.facebook a {
+  width: 216px;
+  background-position: -132px 0;
+  margin: 0 22px 0 0;
+  
+}
+
+nav ul li.contact a {
+  width: 181px;
+  background-position: -368px 0;
+}
+
+nav ul li.shop a:hover {background-position: 0 -42px;}
+nav ul li.facebook a:hover {background-position: -132px -42px;}
+nav ul li.contact a:hover {background-position: -368px -42px;}
+
+/* ------------- =FOOTER  --------------- */
+
+footer p{
+  background:url(copy.png) 0 0 no-repeat;
+  height: 25px;
+}
+
+p.info {
+  width: 185px;
+  background-position: 0 0;
+  float: left;
+}
+
+p.copy {
+  width: 369px;
+  background-position: -269px 0;
+  float: right;
+}
+
+/* ------------- =IMAGE REPLACEMENT  --------------- */
+.site-title,
+footer p,
+nav ul li a{
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  line-height:0;
+  text-indent: -1000em;
+}
+
+/* -------------- =CLEARFIX -------------- */
+
+nav ul:after,
+header:after,
+footer:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
