@@ -1,4 +1,10 @@
-/* ------------- =LONF FOX  --------------- */
+/* ------------- =LONG FOX  --------------- */
+
+body{
+    overflow-x: hidden;
+    background: #fff;
+    color: #000;
+}
 
 /* ------------- =HEADER  --------------- */
 header, footer{
@@ -8,12 +14,12 @@ header, footer{
 .site-title {
   width: 150px;
   height: 150px;
-  background:url(logo.gif) 0 0 no-repeat;
+  background:url(../images/logo.gif) 0 0 no-repeat;
   float: left;
 }
 
 nav {
-  background:url(menu-bg.png) 0 0 no-repeat;
+  background:url(../images/menu-bg.png) 0 0 no-repeat;
   height: 37px;
   display: block;
   float: left;
@@ -30,7 +36,7 @@ nav ul li{
   list-style-type: none;
 }
 
-nav ul li a {height: 37px;background:url(menu.png) 0 0 no-repeat;}
+nav ul li a {height: 37px;background:url(../images/menu.png) 0 0 no-repeat;}
 
 nav ul li.shop a {
   width: 110px;
@@ -54,10 +60,17 @@ nav ul li.shop a:hover {background-position: 0 -42px;}
 nav ul li.facebook a:hover {background-position: -132px -42px;}
 nav ul li.contact a:hover {background-position: -368px -42px;}
 
+/* ------------- =SLIDER  --------------- */
+ul li img{
+  height: 500px !important;
+  width: auto !important;
+}
+
+
 /* ------------- =FOOTER  --------------- */
 
 footer p{
-  background:url(copy.png) 0 0 no-repeat;
+  background:url(../images/copy.png) 0 0 no-repeat;
   height: 25px;
 }
 
@@ -72,6 +85,61 @@ p.copy {
   background-position: -269px 0;
   float: right;
 }
+
+/* ------------- =MEDIA QUERIES  --------------- */
+
+@media screen and (max-width: 765px) {
+    
+  header{text-align: center;}
+  
+  .site-title {
+    position: relative;
+    margin: 0 0 0 50%;
+    left: -75px;
+  }
+  
+  nav {
+    width: 551px;
+    position: relative;
+    margin: 20px 0 20px 50%;
+    left: -275px;
+  }
+  
+}
+
+@media screen and (max-width: 625px) {
+  
+  footer{text-align: center;}
+  footer p{
+    display: block;
+    text-align: center;
+    float:none !important;
+    margin: 10px 0 0 0;
+  }
+  
+}
+
+@media screen and (max-width: 560px) {
+  
+  nav{
+    height: auto;
+    width: 100%;
+    position: static;
+    margin:20px 0 0;
+    background:none;
+  }
+  nav ul li {
+    float:none;
+    margin: 0 0 20px 50% !important;
+    position: relative;
+  }
+  
+  nav ul li.shop {left: -55px;width: 110px;}
+  nav ul li.facebook {left: -108px;width: 216px;}
+  nav ul li.contact {left: -90px;width: 181px;}
+    
+}
+
 
 /* ------------- =IMAGE REPLACEMENT  --------------- */
 .site-title,
