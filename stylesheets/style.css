@@ -12,10 +12,11 @@ header, footer{
 }
 
 .site-title {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   background:url(../images/logo.gif) 0 0 no-repeat;
   float: left;
+  background-size: cover;
 }
 
 nav {
@@ -23,7 +24,7 @@ nav {
   height: 37px;
   display: block;
   float: left;
-  margin: 75px 0 0 20px;
+  margin: 43px 0 0 20px;
 }
 
 nav ul{margin:0;padding:0;}
@@ -88,7 +89,9 @@ p.copy {
 
 /* ------------- =MEDIA QUERIES  --------------- */
 
-@media screen and (max-width: 765px) {
+
+/*Large*/
+@media screen and (max-width: 700px) {
     
   header{text-align: center;}
   
@@ -107,6 +110,8 @@ p.copy {
   
 }
 
+
+/*Mid*/
 @media screen and (max-width: 625px) {
   
   footer{text-align: center;}
@@ -119,14 +124,25 @@ p.copy {
   
 }
 
+/*Small*/
 @media screen and (max-width: 560px) {
   
+.site-title{
+  float: left;
+  position: static;
+  margin: 43px 0 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+
   nav{
     height: auto;
-    width: 100%;
+    width: 216px;
     position: static;
-    margin:20px 0 0;
+    margin:20px 0 0 0;
     background:none;
+    float: right;
   }
   nav ul li {
     float:none;

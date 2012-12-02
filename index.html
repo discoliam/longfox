@@ -63,6 +63,7 @@
       <li><img src="images/slider/10.jpg" /></li>
       <li><img src="images/slider/11.jpg" /></li>
       <li><img src="images/slider/12.jpg" /></li>
+      <li><img src="images/slider/16.jpg" /></li>
       <li><img src="images/slider/13.jpg" /></li>
       <li><img src="images/slider/14.jpg" /></li>
       <li><img src="images/slider/15.jpg" /></li>
@@ -81,10 +82,8 @@
   <script type="text/javascript" charset="utf-8">
     $(window).load(function() {
       $('.flexslider').flexslider({
-        
-        
         animation: "slide",
-        animationLoop: false,
+        animationLoop: true,
         itemWidth: 500,
         itemMargin: 0,
         minItems: 1,
@@ -92,11 +91,16 @@
         touch: true,
         controlNav: false,
         directionNav: true,
+        smoothHeight: true,
         move: 1,
-        pauseOnAction: true,
+        pauseOnHover: true,
+        pauseOnAction: false,
         slideshow: true,
         slideshowSpeed: 5000, 
-        animationSpeed: 500
+        animationSpeed: 500,
+        keyboard: true,
+        initDelay: 0,
+        easing: "linear"
       });
     });
   </script>
